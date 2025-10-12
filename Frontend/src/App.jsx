@@ -8,6 +8,7 @@ import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
 import {Toaster} from "react-hot-toast";
 import LandingPage from "./pages/LandingPage.jsx";
+import Chatbot from './components/Chatbot'; // 👈 Import the Chatbot
 
 const App = () => {
     return (
@@ -26,6 +27,7 @@ const App = () => {
                     <Route path="/signup" element={<Signup />} />
                 </Routes>
             </BrowserRouter>
+            <Chatbot /> {/* 👈 Add the Chatbot component here */}
         </>
     )
 }
